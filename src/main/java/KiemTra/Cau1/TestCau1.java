@@ -16,6 +16,7 @@ public class TestCau1 {
         System.out.println("Diện Tích của hình tròn là: " + c2.getArea());
         System.out.println("Chu Vi của hình tròn là: " + c2.getCircumference());
 
+        System.out.println("Test case lỗi:");
         // Nhập lỗi Bán Kính
 
 //      Circle c3 = new Circle(-3);
