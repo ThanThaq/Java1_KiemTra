@@ -4,6 +4,9 @@ public class KyThuat extends NhanVien{
 
     private String chuyenNghanh;
 
+    public KyThuat() {
+    }
+
     public KyThuat(String maNhanVien, String hoTen) {
         super(maNhanVien, hoTen);
     }
@@ -23,13 +26,13 @@ public class KyThuat extends NhanVien{
 
     @Override
     public String moTaCongViec() {
-        return "Hỗ trợ kỹ thuật trong công ty";
+        return "Kỹ thuật";
     }
 
     @Override
     public String toString() {
         return "KyThuat[" + super.toString() +
-                ", chuyenNghanh='" + chuyenNghanh + '\'' +
+                "\n, chuyenNghanh='" + chuyenNghanh +
                 ']';
     }
 }

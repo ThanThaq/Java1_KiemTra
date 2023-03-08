@@ -7,6 +7,9 @@ public abstract class NhanVien {
 
     private String address;
 
+    public NhanVien() {
+    }
+
     public NhanVien(String maNhanVien, String hoTen) {
         this.maNhanVien = maNhanVien;
         this.hoTen = hoTen;
@@ -52,10 +55,10 @@ public abstract class NhanVien {
     @Override
     public String toString() {
         return "NhanVien[" +
-                "maNhanVien='" + maNhanVien + '\'' +
-                ", hoTen='" + hoTen + '\'' +
-                ", namSinh='" + namSinh + '\'' +
-                ", address='" + address + '\'' +
+                "maNhanVien='" + maNhanVien +
+                ", hoTen='" + hoTen +
+                ", namSinh='" + namSinh +
+                ", address='" + address +
                 ']';
     }
 }
