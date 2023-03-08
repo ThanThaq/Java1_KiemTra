@@ -1,33 +1,26 @@
 package KiemTra.Cau1;
 
+import com.sun.source.tree.ContinueTree;
+
 public class TestCau1 {
     public static void main(String[] args) {
-        // Circle[r = 1]
+        // Bán Kinh = 1.0
         Circle c1 = new Circle();
-        System.out.println(c1.getArea());
-        System.out.println(c1.getCircumference());
         System.out.println(c1);
+        System.out.println("Diện Tích của hình tròn là: " + c1.getArea());
+        System.out.println("Chu Vi của hình tròn là: " + c1.getCircumference());
 
-        // Circle[r = 2]
+        // Bán Kinh = 2.0
         Circle c2 = new Circle(2);
-        System.out.println(c2.getArea());
-        System.out.println(c2.getCircumference());
         System.out.println(c2);
+        System.out.println("Diện Tích của hình tròn là: " + c2.getArea());
+        System.out.println("Chu Vi của hình tròn là: " + c2.getCircumference());
 
-        // Test Error
-        try{
-            Circle c3 = new Circle(-3);
-        }
-        catch (Exception e){
-            System.out.println(e);
-        }
+        // Nhập lỗi Bán Kính
 
-        try{
-            Circle c4 = new Circle(5);
-            c4.setRadius(-4);
-        }
-        catch (Exception e){
-            System.out.println(e);
-        }
+//      Circle c3 = new Circle(-3);
+
+        Circle c4 = new Circle(5);
+        c4.setRadius(-4);
     }
 }
