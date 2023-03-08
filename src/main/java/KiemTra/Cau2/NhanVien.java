@@ -47,6 +47,8 @@ public abstract class NhanVien {
         this.address = address;
     }
 
+    public abstract String moTaCongViec();
+
     @Override
     public String toString() {
         return "NhanVien[" +
@@ -56,6 +58,4 @@ public abstract class NhanVien {
                 ", address='" + address + '\'' +
                 ']';
     }
-
-    public abstract String moTaCongViec();
 }
